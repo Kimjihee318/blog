@@ -89,6 +89,7 @@ header > nav > ul > li:last-child {
     background-color: $text-color;    
     border-color: $text-color;
     color: $point-text;
+    display: none;
 }
 
 // 버튼 마우스 오버시 컬러 변경
@@ -100,7 +101,6 @@ header > nav > ul > li:last-child {
 
 // Category 목록
 .site-category > ul {
-  
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -146,7 +146,7 @@ footer {
 }
 
 // NOTE
-// post page style
+// Post page style
 .content > article > header > p {
   font-size: 1rem;
 }
@@ -180,6 +180,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+  // Header
+  // 검색 간격
+  header > nav > ul > li:last-child {
+    padding-left: initial;
+  }
   // Category 목록
   .site-category > ul {
     display: block;
@@ -196,6 +201,14 @@ footer {
   .content > article > section {
     img {
       width: 100%;
+    }
+  }
+  // Post
+  .content > div > div.posts {
+    padding-top: 10px;
+    font-size: 30px;
+    h1 {
+      font-size: 80%;
     }
   }
 }
