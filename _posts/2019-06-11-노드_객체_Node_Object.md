@@ -1,6 +1,6 @@
 ---
 title: "노드 객체 정리"
-date: 2019-06-11 17:10:02 -0400
+date: 2019-08-04 17:10:02 -0400
 categories: [DOM]
 comments: true
 tags: [DOM]
